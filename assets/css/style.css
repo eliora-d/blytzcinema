@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(4, 58, 37);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(212, 161, 74);
+}
+
+.header-container {
+    position: sticky;
+    top: 0;
+}
+
+.header-container > hr{
+    border: rgb(212, 161, 74);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header > button {
+    width: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header > button:hover {
+    cursor: pointer;
+}
+
+.header > button > div {
+    height: 15vh;
+    width: 100%;
+    background-image: url("../images/blytzmegaplex.png");
+    background-size: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 1vh 0;
+}
+
+.profile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    margin: 2em;
+}
+
+.profile > div {
+    /* background-image: url("../images/user-solid.svg"); */
+    margin-left: 1em;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid rgb(212, 161, 74);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.profile > div > div{
+    background-color: rgb(212, 161, 74);
+    -webkit-mask-image: url("../images/user-solid.svg");
+    mask-image: url("../images/user-solid.svg");
+    height: 45px;
+    width: 39.5px;
+    transform: scale(.75);
+}
+
+.profile-login {
+    text-align: center;
+    border: none;
+    padding: 0 1em;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.profile-login:hover {
+    cursor: pointer;
+}
+
+.profile-admin {
+    padding: 0 1em;
+    font-size: 20px;
+    margin: .75em .5em;
+}
+
+.profile-menu:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;  
+    justify-content: center;
+}
+
+.navbar-menu {
+    height: 6vh;
+    line-height: 6vh;
+    margin: 0;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    font-size: 23px;
+    width: 20%;
+    border: none;
+}
+
+.navbar-menu:hover {
+    cursor: pointer;
+}
+
+.navbar-left {
+    border-left: 2px solid rgb(212, 161, 74);
+    border-right: 1px solid rgb(212, 161, 74);
+}
+
+.navbar-middle {
+    border-left: 1px solid rgb(212, 161, 74);
+    border-right: 1px solid rgb(212, 161, 74);
+}
+
+.navbar-right {
+    border-left: 1px solid rgb(212, 161, 74);
+    border-right: 2px solid rgb(212, 161, 74);
+}
+
+.content {
+    background-color: bisque;
+    padding: 2% 0;
+}
+
+.about {
+    background-color: bisque;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.about-picture {
+    width: 40%;
+    margin: 0 5%;
+    background-image: url("../images/cinema.jpg");
+    background-size: 120%;
+    height: 45vh;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-picture:hover {
+    background-image: url("../images/bed.jpg");
+}
+
+hr {
+    border: 1px solid rgb(4, 58, 37);
+}
+
+.about-content {
+    background-color: bisque;
+    width: 32.5%;
+    margin-right: 12.5%;
+    margin-left: 5%;
+}
+
+.about-text {
+    color: rgb(4, 58, 37);
+    background-color: bisque;
+    text-align: justify;
+    margin-top: 5%;
+    margin: 5% 0;
+}
+
+.about-partner {
+    background-color: bisque;
+    width: 100%;
+}
+
+.about-partner > div {
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    margin-top: 5%;
+    font-size: 32px;
+    text-align: center;
+}
+
+.about-partner-img {
+    background-color: bisque;
+    height: 5vh;
+    margin: 0 5%;
+}
+
+.now-showing {
+    background-color: bisque;
+    border: 15px solid rgb(4, 58, 37);
+    margin: 0 2%;
+}
+
+.now-showing-header {
+    background-color: bisque;
+    color: rgb(4, 58, 37);
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+}
+
+.now-showing-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.movie-href {
+    width: 18%;
+    margin: 1.5% 1%;
+}
+
+.movie-poster {
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer {   
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    padding: 2vh 0;
+    margin: 0 2.5%;
+    height: 8vh;
+}
+
+.footer > p {
+    width: 80%;
+    line-height: 8vh;
+}
+
+.footer-container {
+    width: 15%;
+    text-align: center;
+}
+
+.footer-container > div {
+    display: flex;
+}
+
+.footer-icon {
+    width: 33.3%;
+    height: 8vh;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-icon-left {
+    background-image: url("../images/instagram.png");
+}
+
+.footer-icon-middle {
+    background-image: url("../images/twitter.png");
+}
+
+.footer-icon-right {
+    background-image: url("../images/facebook.png")
+}
+
+.form-content {
+    background-color: bisque;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-container > form > p, label {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 550;
+}
+
+.form-container > form > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container > form > div > div {
+    width: 50%;
+}
+
+.genderp {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 550;
+    width: 50%;
+}
+
+.form-container {
+    width: 48%;
+    margin: 3% 0;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.form-content > .form-container > form > input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 5px;
+}
+
+.form-content > .form-container > form > input[type="text"], input[type="email"],  input[type="password"], textarea, input[type="number"] {
+    background-color: white;
+    width: 97%;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 1%;
+}
+
+textarea {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.form-content > .form-container > form > div > div > label {
+    margin-right: 2em;
+}
+
+.form-content > .form-container > form > button {
+    padding: .5em 1.5em;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 550;
+    border: 2px solid rgb(212, 161, 74);
+    color: rgb(212, 161, 74);
+}
+
+.form-content > .form-container > form > button:hover {
+    cursor: pointer;
+}
+
+.form-content > .form-container > form > .error-message {
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.movie-detail {
+    background-color: bisque;
+    width: 100%;
+}
+
+.movie-detail > img {
+    width: 25%;
+    margin: 1% 5%;
+}
+
+.movie-detail {
+    background-color: bisque;
+    display: flex;
+}
+
+.movie-detail-info {
+    background-color: bisque;
+    margin: 2% 1%;
+    margin-right: 5%;
+    width: 64%;
+}
+
+.movie-detail-info > div {
+    width: 100%;
+    background-color: bisque;
+}
+
+.movie-info-header {
+    background-color: bisque;
+    color: rgb(4, 58, 37);
+    text-align: justify;
+    font-size: 28px;
+    text-decoration: underline;
+    width: 20%;
+}
+
+.movie-info-detail {
+    background-color: bisque;
+    text-align: justify;
+    color: black;
+    font-size: 20px;
+    text-indent: 7.5%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    word-wrap: break-word;
+}
+
+.movie-video {
+    margin-top: 3%;
+    width: 100%;
+    background-color: bisque;
+}
+
+.movie-video > p {
+    color: rgb(4, 58, 37);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1%;
+    background-color: bisque;
+    text-decoration: underline;
+}
+
+#ss {
+    width: 60%;
+    height: 25em;
+    margin: 1% 20%;
+}
+
+video {
+    width: 80%;
+    background-color: bisque;
+    margin: 1% 10%;
+}
+
+.movies {
+    width: 86%;
+    margin: 2% 7%;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-header {
+    background-color: bisque;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(4, 58, 37);
+}
+
+.movies > form {
+    background-color: bisque;
+    width: 16%;
+    margin: 2%;
+    margin-top: 2%;
+}
+
+.movies > form > button > img {
+    width: 100%;
+    height: 22em; 
+}
+
+.movies > form > button > p {
+    background-color: bisque;
+    color: rgb(4, 58, 37);
+    font-size: 20px;
+}
+
+.movie-page-detail {
+    background-color: bisque;
+    border: none;
+}
+
+.movies > form > button:hover {
+    cursor: pointer;
+}
+
+.show-feedback {
+    width: 85%;
+    margin: 2% 7.5%;
+    background-color: bisque;
+}
+
+.show-feedback-header {
+    background-color: bisque;
+    text-align: center;
+    margin-top: .5em;
+    font-size: 35px;
+    color: rgb(4, 58, 37);
+}
+
+.show-feedback > button {
+    border: none;
+}
+
+.show-feedback > button > p {
+    background-color: bisque;
+    font-size: 20px;
+    color: rgb(4, 58, 37);
+}
+
+.show-feedback > button > p:hover {
+    cursor: pointer;
+}
+
+
+
+.feedback-info {
+    background-color: bisque;
+    margin: 2% 20%;
+    width: 60%;
+}
+
+.feedback-info > div {
+    background-color: bisque;
+}
+
+.feedback-info-header {
+    background-color: bisque;
+    color: rgb(4, 58, 37);
+    text-align: justify;
+    font-size: 28px;
+    text-decoration: underline;
+    width: 20%;
+}
+
+.feedback-info-detail {
+    background-color: bisque;
+    text-align: justify;
+    color: black;
+    font-size: 20px;
+    text-indent: 7.5%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
